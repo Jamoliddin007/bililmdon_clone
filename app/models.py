@@ -1,9 +1,6 @@
 from sqlalchemy.orm import mapped_column, Mapped, relationship
-from sqlalchemy.orm import String
-
-
-from datetime import datetime, Date, DateTime
-
+from sqlalchemy import String, DateTime, Date
+from datetime import datetime
 from app.database import Base
 
 
