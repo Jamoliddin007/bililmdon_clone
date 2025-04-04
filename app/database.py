@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, Session,DeclarativeBase
-from typing import AnnotatedD
+from typing import Annotated
 from fastapi import Depends
 
 from dotenv import load_dotenv
