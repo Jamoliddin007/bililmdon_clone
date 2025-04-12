@@ -1,6 +1,7 @@
 from sqlalchemy.orm import mapped_column, Mapped, relationship
 from sqlalchemy import Integer, ForeignKey
-from app.models import Game, Question
+from app.models.game import Game
+from app.models.question import Question
 
 
 from app.database import Base

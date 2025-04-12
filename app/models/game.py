@@ -4,7 +4,12 @@ from sqlalchemy import String, Integer, DateTime, ForeignKey
 from datetime import datetime
 from app.database import Base
 from typing import List
-from app.models import User, GameQuestion, Topic, Participation
+from app.models.user import User
+from app.models.topic import Topic
+from app.models.game_question import GameQuestion
+from app.models.participation import Participation
+
+
 
 class Game(Base):
     __tablename__ = "games"

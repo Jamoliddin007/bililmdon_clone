@@ -4,7 +4,11 @@ from sqlalchemy import String, DateTime, Date, Integer, Boolean, ForeignKey
 from datetime import datetime, date, timezone
 from typing import Optional, List
 
-from app.models import Game,Submission,Participation
+from app.models.game import Game
+from app.models.submission import Submission
+from app.models.participation import Participation
+
+
 
 from app.database import Base
 class User(Base):

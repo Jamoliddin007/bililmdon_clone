@@ -4,7 +4,8 @@ from sqlalchemy import String, DateTime, Integer, Boolean, ForeignKey
 from datetime import datetime, timezone
 from typing import List
 
-from app.models import  Submission
+from app.models.submission import Submission
+
 
 from app.database import Base
 

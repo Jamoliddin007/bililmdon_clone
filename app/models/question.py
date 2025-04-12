@@ -4,8 +4,9 @@ from sqlalchemy import String, DateTime, Integer, ForeignKey
 from datetime import datetime, date, timezone
 from typing import List
 
-from app.models import Option, GameQuestion, Submission
-
+from app.models.option import Option
+from app.models.game_question import GameQuestion
+from app.models.submission import Submission
 
 from app.database import Base
 

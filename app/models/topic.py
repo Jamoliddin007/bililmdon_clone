@@ -2,7 +2,8 @@ from sqlalchemy.orm import mapped_column, Mapped, relationship
 from sqlalchemy import String
 
 from typing import List
-from .game import Game
+from app.models.game import Game
+
 
 from app.database import Base
 class Topic(Base):

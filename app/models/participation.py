@@ -2,7 +2,9 @@ from sqlalchemy.orm import mapped_column, Mapped, relationship
 from sqlalchemy import DateTime,Integer,ForeignKey
 
 from datetime import datetime,timezone
-from app.models import User, Game
+from app.models.user import User
+from app.models.game import Game
+
 
 from app.database import Base
 
