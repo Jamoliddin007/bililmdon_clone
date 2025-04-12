@@ -1,13 +1,21 @@
 from pydantic import BaseModel
+from typing import Optional, List
+from datetime import datetime
 class QuestionCreate(BaseModel):
     title: str
-    description: str
+    description: Optional[str] = None
     topic_id: int
+    owner_id: int
 
-class QuestionRead(QuestionCreate):
+
+class QuestionRead(BaseModel):
     id: int
-    created_at: str
-    updated_at: str
+    title: str
+    description: Optional[str] = None
+    topic_id: int
+    owner_id: int
+    created_at: datetime
+    updated_at: datetime
 
     class Config:
-        orm_mode = True
+        from_attributes = True
