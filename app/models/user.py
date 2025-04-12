@@ -4,8 +4,9 @@ from sqlalchemy import String, DateTime, Date, Integer, Boolean, ForeignKey
 from datetime import datetime, date, timezone
 from typing import Optional, List
 
-from app.database import Base
+from app.models import Game,Submission,Participation
 
+from app.database import Base
 class User(Base):
     __tablename__ = "users"
 
