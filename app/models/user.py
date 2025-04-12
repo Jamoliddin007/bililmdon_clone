@@ -22,6 +22,6 @@ class User(Base):
     is_superuser: Mapped[bool] = mapped_column(default=False)
 
     # Relationships
-    owned_games: Mapped[list["Game"]] = relationship("Game", back_populates="owner")
-    submissions: Mapped[list["Submission"]] = relationship("Submission", back_populates="owner")
-    participations: Mapped[list["Participation"]] = relationship("Participation", back_populates="user")
+    owned_games: Mapped[List["Game"]] = relationship("Game", back_populates="owner")
+    submissions: Mapped[List["Submission"]] = relationship("Submission", back_populates="owner")
+    participations: Mapped[List["Participation"]] = relationship("Participation", back_populates="user")
